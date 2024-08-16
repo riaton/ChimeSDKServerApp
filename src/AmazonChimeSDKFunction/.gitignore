@@ -3,3 +3,4 @@ obj
 ChimeSDKServerApp.sln
 ChimeSDKServerApp.csproj
 aws-lambda-tools-defaults.json
+.vs
