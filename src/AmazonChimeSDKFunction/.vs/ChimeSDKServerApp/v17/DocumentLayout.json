@@ -1,45 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C369EEC5-C6DE-4A42-8BF9-8420858BF429}|..\\..\\test\\AmazonChimeSDKFunction.Tests\\ChimeSDKServerApp.Tests.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\test\\amazonchimesdkfunction.tests\\chimesdkserverapp.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\chimesdkserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\lambdafunctions\\createmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:lambdafunctions\\createmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\factories\\modelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:factories\\modelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\domain\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:domain\\exceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\domain\\commonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:domain\\commonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\domain\\idynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:domain\\idynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\domain\\basicvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:domain\\basicvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\lambdafunctions\\joinmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:lambdafunctions\\joinmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\chimesdkserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:chimesdkserverapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\lambdafunctions\\joinmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:lambdafunctions\\joinmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\lambdafunctions\\leavemeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:lambdafunctions\\leavemeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\lambdafunctions\\endmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:lambdafunctions\\endmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\infrastructure\\dynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:infrastructure\\dynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\domain\\idynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:domain\\idynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\infrastructure\\meetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:infrastructure\\meetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\lambdafunctions\\getmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:lambdafunctions\\getmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\u53C2\u8003\\aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -48,44 +49,54 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\AmazonChimeSDKFunction\\test\\AmazonChimeSDKFunction.Tests\\FunctionTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\lambdafunctions\\createmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:lambdafunctions\\createmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\infrastructure\\dynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:infrastructure\\dynamodboperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\lambdafunctions\\getattendeefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:lambdafunctions\\getattendeefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\lambdafunctions\\leavemeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:lambdafunctions\\leavemeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\domain\\imeetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:domain\\imeetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\lambdafunctions\\endmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:lambdafunctions\\endmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\factories\\responsefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:factories\\responsefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\infrastructure\\meetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:infrastructure\\meetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\factories\\modelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:factories\\modelfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\lambdafunctions\\getmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:lambdafunctions\\getmeetingfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\commonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:commonresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\lambdafunctions\\getattendeefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:lambdafunctions\\getattendeefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\basicvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:basicvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\domain\\imeetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:domain\\imeetingoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\models\\createmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:models\\createmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\factories\\responsefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:factories\\responsefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|c:\\users\\user\\desktop\\git\\createmeetingfunction\\src\\amazonchimesdkfunction\\models\\endmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|CreateMeetingFunction.csproj|solutionrelative:models\\endmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\models\\createmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:models\\createmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|c:\\users\\user\\desktop\\git\\chimesdkserverapp\\src\\amazonchimesdkfunction\\models\\endmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0705117-2885-4267-87AB-5005998E11FD}|ChimeSDKServerApp.csproj|solutionrelative:models\\endmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -100,127 +111,62 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChimeSDKServerApp.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\test\\AmazonChimeSDKFunction.Tests\\ChimeSDKServerApp.Tests.csproj",
-              "RelativeDocumentMoniker": "..\\..\\test\\AmazonChimeSDKFunction.Tests\\ChimeSDKServerApp.Tests.csproj",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\test\\AmazonChimeSDKFunction.Tests\\ChimeSDKServerApp.Tests.csproj",
-              "RelativeToolTip": "..\\..\\test\\AmazonChimeSDKFunction.Tests\\ChimeSDKServerApp.Tests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-16T03:50:22.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "JoinMeetingFunction.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\JoinMeetingFunction.cs",
-              "RelativeDocumentMoniker": "LambdaFunctions\\JoinMeetingFunction.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\JoinMeetingFunction.cs",
-              "RelativeToolTip": "LambdaFunctions\\JoinMeetingFunction.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAwDMAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T11:52:23.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DynamoDBOperation.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Infrastructure\\DynamoDBOperation.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DynamoDBOperation.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Infrastructure\\DynamoDBOperation.cs",
-              "RelativeToolTip": "Infrastructure\\DynamoDBOperation.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAowJkAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T03:48:47.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LeaveMeetingFunction.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\LeaveMeetingFunction.cs",
-              "RelativeDocumentMoniker": "LambdaFunctions\\LeaveMeetingFunction.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\LeaveMeetingFunction.cs",
-              "RelativeToolTip": "LambdaFunctions\\LeaveMeetingFunction.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwCsAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T13:15:36.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateMeetingFunction.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\ChimeSDKServerApp.csproj",
-              "RelativeDocumentMoniker": "ChimeSDKServerApp.csproj",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\ChimeSDKServerApp.csproj",
-              "RelativeToolTip": "ChimeSDKServerApp.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-10T08:50:05.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDynamoDBOperation.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Domain\\IDynamoDBOperation.cs",
-              "RelativeDocumentMoniker": "Domain\\IDynamoDBOperation.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Domain\\IDynamoDBOperation.cs",
-              "RelativeToolTip": "Domain\\IDynamoDBOperation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T03:40:05.928Z",
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwUAAAADAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-08-17T06:40:39.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EndMeetingFunction.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\EndMeetingFunction.cs",
-              "RelativeDocumentMoniker": "LambdaFunctions\\EndMeetingFunction.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\EndMeetingFunction.cs",
-              "RelativeToolTip": "LambdaFunctions\\EndMeetingFunction.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBQAAABQAAAA",
+              "Title": "Exceptions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\Exceptions.cs",
+              "RelativeDocumentMoniker": "Domain\\Exceptions.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\Exceptions.cs",
+              "RelativeToolTip": "Domain\\Exceptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T11:55:13.808Z",
+              "WhenOpened": "2024-08-17T06:38:33.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CommonResult.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\CommonResult.cs",
+              "RelativeDocumentMoniker": "Domain\\CommonResult.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\CommonResult.cs",
+              "RelativeToolTip": "Domain\\CommonResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T06:38:30.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MeetingOperation.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Infrastructure\\MeetingOperation.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\MeetingOperation.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Infrastructure\\MeetingOperation.cs",
-              "RelativeToolTip": "Infrastructure\\MeetingOperation.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwB8AAABWAAAA",
+              "Title": "BasicValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\BasicValidator.cs",
+              "RelativeDocumentMoniker": "Domain\\BasicValidator.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\BasicValidator.cs",
+              "RelativeToolTip": "Domain\\BasicValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T03:46:35.597Z",
+              "WhenOpened": "2024-08-17T06:38:22.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetMeetingFunction.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetMeetingFunction.cs",
-              "RelativeDocumentMoniker": "LambdaFunctions\\GetMeetingFunction.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetMeetingFunction.cs",
-              "RelativeToolTip": "LambdaFunctions\\GetMeetingFunction.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAwCYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:09:46.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "aws-lambda-tools-defaults.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\aws-lambda-tools-defaults.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\aws-lambda-tools-defaults.json",
               "RelativeDocumentMoniker": "aws-lambda-tools-defaults.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\aws-lambda-tools-defaults.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\aws-lambda-tools-defaults.json",
               "RelativeToolTip": "aws-lambda-tools-defaults.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -229,11 +175,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
+              "Title": "ModelFactory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Factories\\ModelFactory.cs",
+              "RelativeDocumentMoniker": "Factories\\ModelFactory.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Factories\\ModelFactory.cs",
+              "RelativeToolTip": "Factories\\ModelFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T02:12:48.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CreateMeetingFunction.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\CreateMeetingFunction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\CreateMeetingFunction.cs",
               "RelativeDocumentMoniker": "LambdaFunctions\\CreateMeetingFunction.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\CreateMeetingFunction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\CreateMeetingFunction.cs",
               "RelativeToolTip": "LambdaFunctions\\CreateMeetingFunction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -242,107 +201,185 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetAttendeeFunction.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetAttendeeFunction.cs",
-              "RelativeDocumentMoniker": "LambdaFunctions\\GetAttendeeFunction.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetAttendeeFunction.cs",
-              "RelativeToolTip": "LambdaFunctions\\GetAttendeeFunction.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAwBwAAAALAAAA",
+              "DocumentIndex": 8,
+              "Title": "JoinMeetingFunction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\JoinMeetingFunction.cs",
+              "RelativeDocumentMoniker": "LambdaFunctions\\JoinMeetingFunction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\JoinMeetingFunction.cs",
+              "RelativeToolTip": "LambdaFunctions\\JoinMeetingFunction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:20:34.948Z",
+              "WhenOpened": "2024-08-11T11:52:23.485Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChimeSDKServerApp.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\ChimeSDKServerApp.csproj",
+              "RelativeDocumentMoniker": "ChimeSDKServerApp.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\ChimeSDKServerApp.csproj",
+              "RelativeToolTip": "ChimeSDKServerApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-10T08:50:05.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LeaveMeetingFunction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\LeaveMeetingFunction.cs",
+              "RelativeDocumentMoniker": "LambdaFunctions\\LeaveMeetingFunction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\LeaveMeetingFunction.cs",
+              "RelativeToolTip": "LambdaFunctions\\LeaveMeetingFunction.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T13:15:36.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDynamoDBOperation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\IDynamoDBOperation.cs",
+              "RelativeDocumentMoniker": "Domain\\IDynamoDBOperation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\IDynamoDBOperation.cs",
+              "RelativeToolTip": "Domain\\IDynamoDBOperation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T03:40:05.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DynamoDBOperation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Infrastructure\\DynamoDBOperation.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DynamoDBOperation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Infrastructure\\DynamoDBOperation.cs",
+              "RelativeToolTip": "Infrastructure\\DynamoDBOperation.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAowJkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T03:48:47.06Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IMeetingOperation.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Domain\\IMeetingOperation.cs",
-              "RelativeDocumentMoniker": "Domain\\IMeetingOperation.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Domain\\IMeetingOperation.cs",
-              "RelativeToolTip": "Domain\\IMeetingOperation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Title": "EndMeetingFunction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\EndMeetingFunction.cs",
+              "RelativeDocumentMoniker": "LambdaFunctions\\EndMeetingFunction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\EndMeetingFunction.cs",
+              "RelativeToolTip": "LambdaFunctions\\EndMeetingFunction.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBQAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T02:45:21.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-11T11:55:13.808Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ResponseFactory.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Factories\\ResponseFactory.cs",
-              "RelativeDocumentMoniker": "Factories\\ResponseFactory.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Factories\\ResponseFactory.cs",
-              "RelativeToolTip": "Factories\\ResponseFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "Title": "MeetingOperation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Infrastructure\\MeetingOperation.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\MeetingOperation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Infrastructure\\MeetingOperation.cs",
+              "RelativeToolTip": "Infrastructure\\MeetingOperation.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwB8AAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T02:37:24.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-11T03:46:35.597Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ModelFactory.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Factories\\ModelFactory.cs",
-              "RelativeDocumentMoniker": "Factories\\ModelFactory.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Factories\\ModelFactory.cs",
-              "RelativeToolTip": "Factories\\ModelFactory.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBMAAAAhAAAA",
+              "Title": "GetMeetingFunction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetMeetingFunction.cs",
+              "RelativeDocumentMoniker": "LambdaFunctions\\GetMeetingFunction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetMeetingFunction.cs",
+              "RelativeToolTip": "LambdaFunctions\\GetMeetingFunction.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAwCYAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T02:12:48.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T10:09:46.179Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "CommonResult.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs",
-              "RelativeDocumentMoniker": "CommonResult.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs",
-              "RelativeToolTip": "CommonResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA9AAAA",
+              "Title": "GetAttendeeFunction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetAttendeeFunction.cs",
+              "RelativeDocumentMoniker": "LambdaFunctions\\GetAttendeeFunction.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\LambdaFunctions\\GetAttendeeFunction.cs",
+              "RelativeToolTip": "LambdaFunctions\\GetAttendeeFunction.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAwBwAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T02:28:37.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T10:20:34.948Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "BasicValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs",
-              "RelativeDocumentMoniker": "BasicValidator.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs",
-              "RelativeToolTip": "BasicValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Title": "IMeetingOperation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\IMeetingOperation.cs",
+              "RelativeDocumentMoniker": "Domain\\IMeetingOperation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Domain\\IMeetingOperation.cs",
+              "RelativeToolTip": "Domain\\IMeetingOperation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T02:13:52.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-11T02:45:21.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "CreateMeeting.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Models\\CreateMeeting.cs",
-              "RelativeDocumentMoniker": "Models\\CreateMeeting.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Models\\CreateMeeting.cs",
-              "RelativeToolTip": "Models\\CreateMeeting.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ResponseFactory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Factories\\ResponseFactory.cs",
+              "RelativeDocumentMoniker": "Factories\\ResponseFactory.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Factories\\ResponseFactory.cs",
+              "RelativeToolTip": "Factories\\ResponseFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T14:50:28.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-11T02:37:24.181Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "CommonResult.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs",
+              "RelativeToolTip": "..\\..\\..\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\CommonResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T02:28:37.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BasicValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs",
+              "RelativeToolTip": "..\\..\\..\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\BasicValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T02:13:52.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateMeeting.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Models\\CreateMeeting.cs",
+              "RelativeDocumentMoniker": "Models\\CreateMeeting.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Models\\CreateMeeting.cs",
+              "RelativeToolTip": "Models\\CreateMeeting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T14:50:28.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Readme.md",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Readme.md",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Readme.md",
               "RelativeDocumentMoniker": "Readme.md",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Readme.md",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Readme.md",
               "RelativeToolTip": "Readme.md",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-08-10T08:47:12.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T08:47:12.112Z"
             },
             {
               "$type": "Document",
@@ -354,21 +391,19 @@
               "RelativeToolTip": "..\\..\\..\\..\\\u53C2\u8003\\aaa.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAYwKwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T07:16:46.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T07:16:46.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "EndMeeting.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Models\\EndMeeting.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Models\\EndMeeting.cs",
               "RelativeDocumentMoniker": "Models\\EndMeeting.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\CreateMeetingFunction\\src\\AmazonChimeSDKFunction\\Models\\EndMeeting.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Git\\ChimeSDKServerApp\\src\\AmazonChimeSDKFunction\\Models\\EndMeeting.cs",
               "RelativeToolTip": "Models\\EndMeeting.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T06:36:26.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-13T06:36:26.18Z"
             },
             {
               "$type": "Document",
