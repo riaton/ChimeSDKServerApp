@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+package ChimeApp.Models;
+
+import "ValidationRules.proto";
+
+
+message EndMeetingRequest {
+    string MeetingId = 1 [(Required) = {value: true}, (Strlen) = {value: 255}];
+    string ExternalMeetingId = 2 [(Required) = {value: true}, (Strlen) = {value: 255}];
+}

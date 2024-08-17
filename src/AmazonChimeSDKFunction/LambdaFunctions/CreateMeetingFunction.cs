@@ -57,6 +57,11 @@ public class CreateMeetingFunction
             //クライアントに返却
             return ResponseFactory.CreateResponse(CommonResult.OK, response);
         }
+        catch(EnvironmentVariableException ex)
+        {
+            context.Logger.LogLine(ex.Message);
+            return ResponseFactory.CreateResponse(CommonResult.InternalServerError);
+        }
         catch(Exception e)
         {
             context.Logger.LogLine(e.Message);

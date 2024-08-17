@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+package ChimeApp.Models;
+
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/wrappers.proto";
+
+extend google.protobuf.FieldOptions {
+     google.protobuf.Int32Value Maxval = 50001;
+     google.protobuf.Int32Value Minval = 50002;
+     google.protobuf.BoolValue Required = 50003;
+     google.protobuf.Int32Value Strlen = 50004;
+     google.protobuf.StringValue Regex = 50005;
+}

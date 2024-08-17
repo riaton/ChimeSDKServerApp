@@ -6,7 +6,6 @@ using ChimeApp.Models;
 using ChimeApp.Infrastructure;
 using Amazon.DynamoDBv2;
 
-//[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
 namespace ChimeApp.LambdaFunctions;
 
@@ -42,7 +41,12 @@ public class GetMeetingFunction
             //クライアントに返却
             return ResponseFactory.CreateResponse(CommonResult.OK, response);
         }
-        catch(Exception e)
+        catch (EnvironmentVariableException ex)
+        {
+            context.Logger.LogLine(ex.Message);
+            return ResponseFactory.CreateResponse(CommonResult.InternalServerError);
+        }
+        catch (Exception e)
         {
             context.Logger.LogLine(e.Message);
             return ResponseFactory.CreateResponse(CommonResult.InternalServerError);

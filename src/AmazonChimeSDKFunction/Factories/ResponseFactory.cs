@@ -1,6 +1,7 @@
 ﻿using Amazon.Lambda.APIGatewayEvents;
 using Google.Protobuf;
 using Newtonsoft.Json;
+using ChimeApp.Domain;
 
 namespace ChimeApp.Factories
 {

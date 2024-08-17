@@ -1,0 +1,9 @@
+﻿syntax = "proto3";
+package ChimeApp.Models;
+
+import "ValidationRules.proto";
+
+message LeaveMeetingRequest {
+    string MeetingId = 1 [(Required) = {value: true}, (Strlen) = {value: 255}];
+    string AttendeeId = 2 [(Required) = {value: true}, (Strlen) = {value: 255}];
+}

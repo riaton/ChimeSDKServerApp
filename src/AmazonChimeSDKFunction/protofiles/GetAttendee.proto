@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+package ChimeApp.Models;
+
+import "ValidationRules.proto";
+
+message GetAttendeeRequest {
+    string AttendeeId = 1 [(Required) = {value: true}, (Strlen) = {value: 255}];
+}
+
+message GetAttendeeResponse {
+    string ExternalAttendeeId = 1;
+}

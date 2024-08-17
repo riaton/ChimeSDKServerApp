@@ -3,7 +3,7 @@ using Google.Protobuf;
 using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace ChimeApp
+namespace ChimeApp.Domain
 {
     internal static class BasicValidator
     {

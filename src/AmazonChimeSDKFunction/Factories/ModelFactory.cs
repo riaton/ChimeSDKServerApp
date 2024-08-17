@@ -1,4 +1,5 @@
 ﻿using Google.Protobuf;
+using ChimeApp.Domain;
 
 namespace ChimeApp.Factories
 {

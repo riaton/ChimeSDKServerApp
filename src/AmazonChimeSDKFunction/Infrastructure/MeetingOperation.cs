@@ -13,27 +13,19 @@ namespace ChimeApp.Infrastructure
         }
         public async Task<Meeting> CreateMeeting(Models.CreateMeetingRequest request)
         {
-            var response = await _client.CreateMeetingAsync(new CreateMeetingRequest
-            {
-                ClientRequestToken = Guid.NewGuid().ToString(),
-                ExternalMeetingId = request.ExternalMeetingId,
-                MediaRegion = Environment.GetEnvironmentVariable("MEDIA_REGION")
-            });
-            /**
+            Console.WriteLine(request.MaxAttendee);
+
             var response = await _client.CreateMeetingAsync(new CreateMeetingRequest
             {
                 ClientRequestToken = Guid.NewGuid().ToString(),
                 ExternalMeetingId = request.ExternalMeetingId,
                 MediaRegion = Environment.GetEnvironmentVariable("MEDIA_REGION"),
-                MeetingFeatures =
-                {
-                    Attendee =
-                    {
+                MeetingFeatures = new MeetingFeaturesConfiguration(){
+                    Attendee = new AttendeeFeatures(){
                         MaxCount = request.MaxAttendee == 0 ? 10 : request.MaxAttendee
                     }
                 }
             });
-            **/
 
             return response.Meeting;
         }

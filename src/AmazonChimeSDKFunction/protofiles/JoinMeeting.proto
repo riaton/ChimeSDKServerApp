@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+package ChimeApp.Models;
+
+import "ValidationRules.proto";
+
+message JoinMeetingRequest {
+    string MeetingId = 1 [(Required) = {value: true}, (Strlen) = {value: 255}];
+    string ExternalAttendeeId = 2 [(Required) = {value: true}, (Strlen) = {value: 255}];
+}
+
+message JoinMeetingResponse {
+    string AttendeeInfo = 1;
+}

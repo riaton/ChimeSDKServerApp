@@ -23,8 +23,7 @@ namespace ChimeApp.Infrastructure
         {
             if (_tableMeeting == null)
             {
-                Console.WriteLine("A Environment variable of meeting table is null");
-                throw new Exception();
+                throw new EnvironmentVariableException("A Environment variable of meeting table is null");
             }
 
             GetItemRequest req = new();
@@ -47,8 +46,7 @@ namespace ChimeApp.Infrastructure
         {
             if (_tableAttendee == null)
             {
-                Console.WriteLine("A Environment variable of attendee table is null");
-                throw new Exception();
+                throw new EnvironmentVariableException("A Environment variable of attendee table is null");
             }
 
             GetItemRequest req = new();
@@ -71,8 +69,7 @@ namespace ChimeApp.Infrastructure
         {
             if (_tableMeeting == null)
             {
-                Console.WriteLine("A Environment variable of meeting table is null");
-                throw new Exception();
+                throw new EnvironmentVariableException("A Environment variable of meeting table is null");
             }
 
             var res = await _client.PutItemAsync(new PutItemRequest
@@ -85,20 +82,13 @@ namespace ChimeApp.Infrastructure
                     {"MeetingInfo", new AttributeValue{ S = JsonConvert.SerializeObject(meeting) }}
                 }
             });
-
-            if ((int)res.HttpStatusCode != CommonResult.OK)
-            {
-                Console.WriteLine("Failed to register data to dynamodb. statusCode = " + res.HttpStatusCode.ToString());
-                throw new Exception();
-            }
         }
 
         public async Task RegisterAttendeeInfo(Attendee attendee)
         {
             if (_tableAttendee == null)
             {
-                Console.WriteLine("A Environment variable of attendee table is null");
-                throw new Exception();
+                throw new EnvironmentVariableException("A Environment variable of attendee table is null");
             }
 
             var res = await _client.PutItemAsync(new PutItemRequest
@@ -110,52 +100,32 @@ namespace ChimeApp.Infrastructure
                     {"ExternalAttendeeId", new AttributeValue{ S = attendee.ExternalUserId }}
                 }
             });
-
-            if ((int)res.HttpStatusCode != CommonResult.OK)
-            {
-                Console.WriteLine("Failed to register data to dynamodb. statusCode = " + res.HttpStatusCode.ToString());
-                throw new Exception();
-            }
         }
 
         public async Task DeleteMeetingInfo(string externalMeetingId)
         {
             if (_tableMeeting == null)
             {
-                Console.WriteLine("A Environment variable of meeting table is null");
-                throw new Exception();
+                throw new EnvironmentVariableException("A Environment variable of meeting table is null");
             }
 
             DeleteItemRequest req = new();
             req.TableName = _tableMeeting;
             req.Key["ExternalMeetingId"] = new AttributeValue { S = externalMeetingId };
             var res = await _client.DeleteItemAsync(req);
-
-            if((int)res.HttpStatusCode != CommonResult.OK)
-            {
-                Console.WriteLine("Failed to delete dynamodb data. statusCode = " + res.HttpStatusCode.ToString());
-                throw new Exception();
-            }
         }
 
         public async Task DeleteAttendeeInfo(string attendeeId)
         {
             if (_tableAttendee == null)
             {
-                Console.WriteLine("A Environment variable of attendee table is null");
-                throw new Exception();
+                throw new EnvironmentVariableException("A Environment variable of attendee table is null");
             }
 
             DeleteItemRequest req = new();
             req.TableName = _tableAttendee;
             req.Key["AttendeeId"] = new AttributeValue { S = attendeeId };
             var res = await _client.DeleteItemAsync(req);
-
-            if ((int)res.HttpStatusCode != CommonResult.OK)
-            {
-                Console.WriteLine("Failed to delete dynamodb data. statusCode = " + res.HttpStatusCode.ToString());
-                throw new Exception();
-            }
         }
     }
 }
