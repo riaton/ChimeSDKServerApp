@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChimeSDKServerApp.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aff6d2a48b37abd476371353ef1c4c81b4502668")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f9bab3e91db987e3353a3a8ffcde86bdceead76")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChimeSDKServerApp.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChimeSDKServerApp.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
