@@ -5,9 +5,9 @@ using ChimeApp.Domain;
 
 namespace ChimeApp.Factories
 {
-    internal class ResponseFactory
+    public class ResponseFactory
     {
-        internal static APIGatewayProxyResponse CreateResponse(int statusCode, IMessage? body = null)
+        public static APIGatewayProxyResponse CreateResponse(int statusCode, IMessage? body = null)
         {
             return new APIGatewayProxyResponse
             {

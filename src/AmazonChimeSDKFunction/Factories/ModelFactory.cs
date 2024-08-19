@@ -3,9 +3,9 @@ using ChimeApp.Domain;
 
 namespace ChimeApp.Factories
 {
-    internal class ModelFactory
+    public class ModelFactory
     {
-        internal static (bool validateOk, T? model) CreateModel<T>(T body) where T : IMessage
+        public static (bool validateOk, T? model) CreateModel<T>(T body) where T : IMessage
         {
             var result = false;
             T? model = default;

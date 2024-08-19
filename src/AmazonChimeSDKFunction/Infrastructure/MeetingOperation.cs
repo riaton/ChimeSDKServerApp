@@ -4,7 +4,7 @@ using ChimeApp.Domain;
 
 namespace ChimeApp.Infrastructure
 {
-    internal class MeetingOperation : IMeetingOperation
+    public class MeetingOperation : IMeetingOperation
     {
         private readonly IAmazonChimeSDKMeetings _client;
         public MeetingOperation(IAmazonChimeSDKMeetings client)
@@ -13,8 +13,6 @@ namespace ChimeApp.Infrastructure
         }
         public async Task<Meeting> CreateMeeting(Models.CreateMeetingRequest request)
         {
-            Console.WriteLine(request.MaxAttendee);
-
             var response = await _client.CreateMeetingAsync(new CreateMeetingRequest
             {
                 ClientRequestToken = Guid.NewGuid().ToString(),

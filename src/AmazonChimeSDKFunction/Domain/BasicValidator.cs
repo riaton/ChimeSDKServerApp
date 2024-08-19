@@ -5,9 +5,9 @@ using System.Text.RegularExpressions;
 
 namespace ChimeApp.Domain
 {
-    internal static class BasicValidator
+    public static class BasicValidator
     {
-        internal static List<string> Validate(IMessage message)
+        public static List<string> Validate(IMessage message)
         {
             var results = new List<string>();
             foreach (var field in message.Descriptor.Fields.InDeclarationOrder())
