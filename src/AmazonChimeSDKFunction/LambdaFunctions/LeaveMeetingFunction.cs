@@ -6,6 +6,7 @@ using ChimeApp.Models;
 using ChimeApp.Infrastructure;
 using Amazon.ChimeSDKMeetings;
 using Amazon.DynamoDBv2;
+using ChimeSDKServerApp.Domain.DomainHelper;
 
 
 namespace ChimeApp.LambdaFunctions;
@@ -16,7 +17,8 @@ public class LeaveMeetingFunction
     private readonly IDynamoDBOperation _dynamoDBRepository;
     public LeaveMeetingFunction()
     {
-        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient());
+        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient(), 
+            new DomainHelper());
         _dynamoDBRepository = new DynamoDBOperation(new AmazonDynamoDBClient());
     }
 

@@ -7,6 +7,7 @@ using ChimeApp.Infrastructure;
 using Amazon.ChimeSDKMeetings;
 using System.Text.Json;
 using Amazon.DynamoDBv2;
+using ChimeSDKServerApp.Domain.DomainHelper;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
@@ -18,7 +19,8 @@ public class CreateMeetingFunction
     private readonly IDynamoDBOperation _dynamoDBRepository;
     public CreateMeetingFunction()
     {
-        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient());
+        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient(),
+            new DomainHelper());
         _dynamoDBRepository = new DynamoDBOperation(new AmazonDynamoDBClient());
     }
 

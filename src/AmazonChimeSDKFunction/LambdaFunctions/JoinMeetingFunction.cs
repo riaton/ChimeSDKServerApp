@@ -7,6 +7,7 @@ using ChimeApp.Infrastructure;
 using Amazon.ChimeSDKMeetings;
 using System.Text.Json;
 using Amazon.DynamoDBv2;
+using ChimeSDKServerApp.Domain.DomainHelper;
 
 
 namespace ChimeApp.LambdaFunctions;
@@ -17,7 +18,8 @@ public class JoinMeetingFunction
     private readonly IDynamoDBOperation _dynamoDBRepository;
     public JoinMeetingFunction()
     {
-        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient());
+        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient(),
+            new DomainHelper());
         _dynamoDBRepository = new DynamoDBOperation(new AmazonDynamoDBClient());
     }
 

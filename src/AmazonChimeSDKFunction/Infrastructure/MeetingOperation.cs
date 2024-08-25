@@ -1,23 +1,26 @@
 ﻿using Amazon.ChimeSDKMeetings;
 using Amazon.ChimeSDKMeetings.Model;
 using ChimeApp.Domain;
+using ChimeSDKServerApp.Domain.DomainHelper;
 
 namespace ChimeApp.Infrastructure
 {
     public class MeetingOperation : IMeetingOperation
     {
         private readonly IAmazonChimeSDKMeetings _client;
-        public MeetingOperation(IAmazonChimeSDKMeetings client)
+        private readonly DomainHelper _domainHelper;
+        public MeetingOperation(IAmazonChimeSDKMeetings client, DomainHelper helper)
         {
             _client = client;
+            _domainHelper = helper;
         }
         public async Task<Meeting> CreateMeeting(Models.CreateMeetingRequest request)
         {
             var response = await _client.CreateMeetingAsync(new CreateMeetingRequest
             {
-                ClientRequestToken = Guid.NewGuid().ToString(),
+                ClientRequestToken = _domainHelper.GetUUId(),
                 ExternalMeetingId = request.ExternalMeetingId,
-                MediaRegion = Environment.GetEnvironmentVariable("MEDIA_REGION"),
+                MediaRegion = _domainHelper.GetRegion(),
                 MeetingFeatures = new MeetingFeaturesConfiguration(){
                     Attendee = new AttendeeFeatures(){
                         MaxCount = request.MaxAttendee == 0 ? 10 : request.MaxAttendee
