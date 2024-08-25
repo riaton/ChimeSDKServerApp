@@ -4,7 +4,6 @@ using ChimeApp.Domain;
 using ChimeApp.Factories;
 using ChimeApp.Models;
 using ChimeApp.Infrastructure;
-using Amazon.DynamoDBv2;
 
 
 namespace ChimeApp.LambdaFunctions;
@@ -14,7 +13,7 @@ public class GetMeetingFunction
     private readonly IDynamoDBOperation _dynamoDBRepository;
     public GetMeetingFunction()
     {
-        _dynamoDBRepository = new DynamoDBOperation(new AmazonDynamoDBClient());
+        _dynamoDBRepository = new DynamoDBOperation();
     }
 
     /// <summary>

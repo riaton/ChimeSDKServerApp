@@ -4,9 +4,6 @@ using ChimeApp.Domain;
 using ChimeApp.Factories;
 using ChimeApp.Models;
 using ChimeApp.Infrastructure;
-using Amazon.ChimeSDKMeetings;
-using Amazon.DynamoDBv2;
-using ChimeSDKServerApp.Domain.DomainHelper;
 
 
 namespace ChimeApp.LambdaFunctions;
@@ -17,9 +14,8 @@ public class EndMeetingFunction
     private readonly IDynamoDBOperation _dynamoDBRepository;
     public EndMeetingFunction()
     {
-        _meetingRepository = new MeetingOperation(new AmazonChimeSDKMeetingsClient(),
-            new DomainHelper());
-        _dynamoDBRepository = new DynamoDBOperation(new AmazonDynamoDBClient());
+        _meetingRepository = new MeetingOperation();
+        _dynamoDBRepository = new DynamoDBOperation();
     }
 
     /// <summary>

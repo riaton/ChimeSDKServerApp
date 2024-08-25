@@ -2,6 +2,7 @@
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using ChimeApp.Domain;
+using ChimeSDKServerApp.Domain.DomainHelper;
 using Newtonsoft.Json;
 
 
@@ -10,13 +11,18 @@ namespace ChimeApp.Infrastructure
     public class DynamoDBOperation: IDynamoDBOperation
     {
         private readonly IAmazonDynamoDB _client;
+        private readonly DomainHelper _helper;
         private readonly string? _tableMeeting;
         private readonly string? _tableAttendee;
-        public DynamoDBOperation(IAmazonDynamoDB client)
+        public DynamoDBOperation() : this(new AmazonDynamoDBClient(), new DomainHelper())
+        {
+        }
+        public DynamoDBOperation(IAmazonDynamoDB client, DomainHelper helper)
         {
             _client = client;
-            _tableMeeting = Environment.GetEnvironmentVariable("TABLE_NAME_MEETING");
-            _tableAttendee = Environment.GetEnvironmentVariable("TABLE_NAME_ATTENDEE");
+            _helper = helper;
+            _tableMeeting = helper.GetMeetingTableName();
+            _tableAttendee = helper.GetAttendeeTableName();
         }
 
         public async Task<string> GetMeetingInfo(string externalMeetingId)

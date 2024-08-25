@@ -9,6 +9,11 @@ namespace ChimeApp.Infrastructure
     {
         private readonly IAmazonChimeSDKMeetings _client;
         private readonly DomainHelper _domainHelper;
+        public MeetingOperation():this(new AmazonChimeSDKMeetingsClient(),
+            new DomainHelper())
+        {
+        }
+
         public MeetingOperation(IAmazonChimeSDKMeetings client, DomainHelper helper)
         {
             _client = client;
