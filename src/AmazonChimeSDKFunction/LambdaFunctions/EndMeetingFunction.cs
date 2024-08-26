@@ -10,8 +10,8 @@ namespace ChimeApp.LambdaFunctions;
 
 public class EndMeetingFunction
 {
-    private readonly IMeetingOperation _meetingRepository;
-    private readonly IDynamoDBOperation _dynamoDBRepository;
+    private readonly IMeetingRepository _meetingRepository;
+    private readonly IDynamoDBRepository _dynamoDBRepository;
     public EndMeetingFunction()
     {
         _meetingRepository = new MeetingOperation();

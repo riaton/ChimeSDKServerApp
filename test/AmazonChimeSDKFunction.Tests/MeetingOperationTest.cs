@@ -36,17 +36,17 @@ public class MeetingOperationTest
         _mockDomainHelper.Setup(x => x.GetRegion()).Returns("region");
         _mock.Setup(x => x.CreateMeetingAsync(It.IsAny<CreateMeetingRequest>(), default))
             .Callback<CreateMeetingRequest, CancellationToken>((request, token) => {
-                Assert.Equal("uuid", request.ClientRequestToken);
-                Assert.Equal("externalMeetingId", request.ExternalMeetingId);
-                Assert.Equal("region", request.MediaRegion);
-                Assert.Equal(10, request.MeetingFeatures.Attendee.MaxCount);
+                request.ClientRequestToken.Is("uuid");
+                request.ExternalMeetingId.Is("externalMeetingId");
+                request.MediaRegion.Is("region");
+                request.MeetingFeatures.Attendee.MaxCount.Is(10);
             })
             .ReturnsAsync(_createMeetingResponse);
 
         var response = await _meetingOperation.CreateMeeting(req);
 
-        Assert.NotNull(response);
-        Assert.True(response.Equals(_createMeetingResponse.Meeting));
+        response.IsNotNull();
+        response.Equals(_createMeetingResponse.Meeting).IsTrue();
 
         _mock.Verify(x => x.CreateMeetingAsync(It.IsAny<CreateMeetingRequest>(), default), Times.Once);
     }
@@ -57,7 +57,7 @@ public class MeetingOperationTest
     {
         _mock.Setup(x => x.DeleteMeetingAsync(It.IsAny<DeleteMeetingRequest>(), default))
             .Callback<DeleteMeetingRequest, CancellationToken>((request, token) => { 
-                Assert.Equal("meetingId", request.MeetingId);
+                request.MeetingId.Is("meetingId");
             });
 
         await _meetingOperation.EndMeeting("meetingId");
@@ -72,15 +72,15 @@ public class MeetingOperationTest
         _mock.Setup(x => x.CreateAttendeeAsync(It.IsAny<CreateAttendeeRequest>(), default))
             .Callback<CreateAttendeeRequest, CancellationToken>((request, token) =>
             {
-                Assert.Equal("meetingId", request.MeetingId);
-                Assert.Equal("externalAttendeeId", request.ExternalUserId);
+                request.MeetingId.Is("meetingId");
+                request.ExternalUserId.Is("externalAttendeeId");
             })
             .ReturnsAsync(_createAttendeeResponse);
 
         var response = await _meetingOperation.JoinMeeting("meetingId", "externalAttendeeId");
 
-        Assert.NotNull(response);
-        Assert.True(response.Equals(_createAttendeeResponse.Attendee));
+        response.IsNotNull();
+        response.Equals(_createAttendeeResponse.Attendee).IsTrue();
 
         _mock.Verify(x => x.CreateAttendeeAsync(It.IsAny<CreateAttendeeRequest>(), default), Times.Once);
     }
@@ -92,8 +92,8 @@ public class MeetingOperationTest
         _mock.Setup(x => x.DeleteAttendeeAsync(It.IsAny<DeleteAttendeeRequest>(), default))
             .Callback<DeleteAttendeeRequest, CancellationToken>((request, token) =>
             {
-                Assert.Equal("meetingId", request.MeetingId);
-                Assert.Equal("attendeeId", request.AttendeeId);
+                request.MeetingId.Is("meetingId");
+                request.AttendeeId.Is("attendeeId");
             });
 
         await _meetingOperation.LeaveMeeting("meetingId", "attendeeId");

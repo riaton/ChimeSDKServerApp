@@ -12,8 +12,8 @@ namespace ChimeApp.LambdaFunctions;
 
 public class CreateMeetingFunction
 {
-    private readonly IMeetingOperation _meetingRepository;
-    private readonly IDynamoDBOperation _dynamoDBRepository;
+    private readonly IMeetingRepository _meetingRepository;
+    private readonly IDynamoDBRepository _dynamoDBRepository;
     public CreateMeetingFunction()
     {
         _meetingRepository = new MeetingOperation();

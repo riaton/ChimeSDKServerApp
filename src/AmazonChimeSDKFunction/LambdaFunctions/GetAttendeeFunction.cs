@@ -10,7 +10,7 @@ namespace ChimeApp.LambdaFunctions;
 
 public class GetAttendeeFunction
 {
-    private readonly IDynamoDBOperation _dynamoDBRepository;
+    private readonly IDynamoDBRepository _dynamoDBRepository;
     public GetAttendeeFunction()
     {
         _dynamoDBRepository = new DynamoDBOperation();

@@ -5,7 +5,7 @@ using ChimeSDKServerApp.Domain.DomainHelper;
 
 namespace ChimeApp.Infrastructure
 {
-    public class MeetingOperation : IMeetingOperation
+    public class MeetingOperation : IMeetingRepository
     {
         private readonly IAmazonChimeSDKMeetings _client;
         private readonly DomainHelper _domainHelper;

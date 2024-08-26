@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace ChimeApp.Infrastructure
 {
-    public class DynamoDBOperation: IDynamoDBOperation
+    public class DynamoDBOperation: IDynamoDBRepository
     {
         private readonly IAmazonDynamoDB _client;
         private readonly DomainHelper _helper;

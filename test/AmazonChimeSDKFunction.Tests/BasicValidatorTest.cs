@@ -44,17 +44,17 @@ namespace ChimeSDKServerApp.Tests
             results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to Required Check. FieldName = TestString", results[0]);
+            results[0].Is("Failed to Required Check. FieldName = TestString");
 
             _testMessage.TestString = "12345678910";
             results = BasicValidator.Validate(_testMessage);
             Assert.Single(results);
-            Assert.Equal("Failed to StrLen Check. FieldName = TestString", results[0]);
+            results[0].Is("Failed to StrLen Check. FieldName = TestString");
 
             _testMessage.TestString = "abcde";
             results = BasicValidator.Validate(_testMessage);
             Assert.Single(results);
-            Assert.Equal("Failed to Regex Check. FieldName = TestString", results[0]);
+            results[0].Is("Failed to Regex Check. FieldName = TestString");
         }
 
         [Fact]
@@ -65,13 +65,13 @@ namespace ChimeSDKServerApp.Tests
             var results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to Required Check. FieldName = TestInteger", results[0]);
+            results[0].Is("Failed to Required Check. FieldName = TestInteger");
 
             _testMessage.TestInteger = 0;
             results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to MinVal Check. FieldName = TestInteger", results[0]);
+            results[0].Is("Failed to MinVal Check. FieldName = TestInteger");
 
             _testMessage.TestInteger = 10;
             results = BasicValidator.Validate(_testMessage);
@@ -82,7 +82,7 @@ namespace ChimeSDKServerApp.Tests
             results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to MaxVal Check. FieldName = TestInteger", results[0]);
+            results[0].Is("Failed to MaxVal Check. FieldName = TestInteger");
         }
 
         [Fact]
@@ -93,14 +93,12 @@ namespace ChimeSDKServerApp.Tests
             var results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to Required Check. FieldName = TestSubMessage", results[0]);
-
+            results[0].Is("Failed to Required Check. FieldName = TestSubMessage");
             _testMessage.TestSubMessage = new SubMessage();
             results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to Required Check. FieldName = TestBool", results[0]);
-
+            results[0].Is("Failed to Required Check. FieldName = TestBool");
             _testMessage.TestSubMessage.TestBool = true;
             results = BasicValidator.Validate(_testMessage);
 
@@ -145,8 +143,7 @@ namespace ChimeSDKServerApp.Tests
             results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to Required Check. FieldName = TestBool", results[0]);
-
+            results[0].Is("Failed to Required Check. FieldName = TestBool");
             _testMessage.TestSubMessageList[0].TestBool = false;
             results = BasicValidator.Validate(_testMessage);
 
@@ -164,7 +161,7 @@ namespace ChimeSDKServerApp.Tests
             results = BasicValidator.Validate(_testMessage);
 
             Assert.Single(results);
-            Assert.Equal("Failed to Required Check. FieldName = TestBool", results[0]);
+            results[0].Is("Failed to Required Check. FieldName = TestBool");
         }
     }
 }

@@ -18,9 +18,9 @@ public class ResponseFactoryTest
             {"Access-Control-Allow-Origin", "*"},
             {"Access-Control-Allow-Methods", "OPTIONS,POST,GET"}
         };
-        Assert.Equal(CommonResult.OK, res.StatusCode);
-        Assert.Equal(header, res.Headers);
-        Assert.Equal(string.Empty, res.Body);
+        res.StatusCode.Is(CommonResult.OK);
+        res.Headers.Is(header);
+        res.Body.Is(string.Empty);
     }
 
     [Fact]
@@ -34,6 +34,6 @@ public class ResponseFactoryTest
         var res = ResponseFactory.CreateResponse(CommonResult.OK, message);
 
         var expected = JsonConvert.SerializeObject(message);
-        Assert.Equal(expected, res.Body);
+        res.Body.Is(expected);
     }
 }

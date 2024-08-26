@@ -9,15 +9,15 @@ public class CommonResultTest
     [Trait("Category", "Domain")]
     public void 初期値の確認()
     {
-        Assert.Equal(200, CommonResult.OK);
-        Assert.Equal(400, CommonResult.ValidateError);
-        Assert.Equal(500, CommonResult.InternalServerError);
+        CommonResult.OK.Is(200);
+        CommonResult.ValidateError.Is(400);
+        CommonResult.InternalServerError.Is(500);
         var header = new Dictionary<string, string>(){
             {"Access-Control-Allow-Headers", "Content-Type"},
             {"Access-Control-Allow-Origin", "*"},
             {"Access-Control-Allow-Methods", "OPTIONS,POST,GET"}
         };
-        Assert.Equal(header, CommonResult.ResponseHeader);
+        CommonResult.ResponseHeader.Is(header);
     }
 
     [Fact]
@@ -25,15 +25,15 @@ public class CommonResultTest
     public void ステータスコードから適切なステータスメッセージが取得できる()
     {
         var message = CommonResult.CreateStatusMessage(CommonResult.OK);
-        Assert.Equal("OK", message);
+        message.Is("OK");
 
         message = CommonResult.CreateStatusMessage(CommonResult.ValidateError);
-        Assert.Equal("Validation Error", message);
+        message.Is("Validation Error");
 
         message = CommonResult.CreateStatusMessage(CommonResult.InternalServerError);
-        Assert.Equal("Internal Server Error", message);
+        message.Is("Internal Server Error");
 
         message = CommonResult.CreateStatusMessage(999);
-        Assert.Equal("What is this error?", message);
+        message.Is("What is this error?");
     }
 }
