@@ -12,10 +12,12 @@ public class EndMeetingFunction
 {
     private readonly IMeetingRepository _meetingRepository;
     private readonly IDynamoDBRepository _dynamoDBRepository;
-    public EndMeetingFunction()
+    public EndMeetingFunction():this(new MeetingOperation(), new DynamoDBOperation()){}
+
+    public EndMeetingFunction(IMeetingRepository meeting, IDynamoDBRepository dynamo)
     {
-        _meetingRepository = new MeetingOperation();
-        _dynamoDBRepository = new DynamoDBOperation();
+        _meetingRepository = meeting;
+        _dynamoDBRepository = dynamo;
     }
 
     /// <summary>

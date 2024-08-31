@@ -11,9 +11,10 @@ namespace ChimeApp.LambdaFunctions;
 public class GetMeetingFunction
 {
     private readonly IDynamoDBRepository _dynamoDBRepository;
-    public GetMeetingFunction()
+    public GetMeetingFunction() : this(new DynamoDBOperation()) { }
+    public GetMeetingFunction(IDynamoDBRepository dynamo)
     {
-        _dynamoDBRepository = new DynamoDBOperation();
+        _dynamoDBRepository = dynamo;
     }
 
     /// <summary>

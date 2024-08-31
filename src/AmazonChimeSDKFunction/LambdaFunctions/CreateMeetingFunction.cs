@@ -14,10 +14,12 @@ public class CreateMeetingFunction
 {
     private readonly IMeetingRepository _meetingRepository;
     private readonly IDynamoDBRepository _dynamoDBRepository;
-    public CreateMeetingFunction()
+    public CreateMeetingFunction() : this(new MeetingOperation(), new DynamoDBOperation()) { }
+
+    public CreateMeetingFunction(IMeetingRepository meeting, IDynamoDBRepository dynamo)
     {
-        _meetingRepository = new MeetingOperation();
-        _dynamoDBRepository = new DynamoDBOperation();
+        _meetingRepository = meeting;
+        _dynamoDBRepository = dynamo;
     }
 
     /// <summary>

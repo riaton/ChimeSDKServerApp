@@ -2,7 +2,7 @@
 
 namespace ChimeApp.Domain
 {
-    internal interface IMeetingRepository
+    public interface IMeetingRepository
     {
         Task<Meeting> CreateMeeting(Models.CreateMeetingRequest request);
         Task<Attendee>? JoinMeeting(string meetingId, string externalAttendeeId);

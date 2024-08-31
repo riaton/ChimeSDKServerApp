@@ -3,7 +3,7 @@ using ChimeApp.Models;
 using Xunit;
 
 
-namespace ChimeSDKServerApp.Tests
+namespace ChimeSDKServerApp.Tests.DomainTests
 {
     public class BasicValidatorTest
     {

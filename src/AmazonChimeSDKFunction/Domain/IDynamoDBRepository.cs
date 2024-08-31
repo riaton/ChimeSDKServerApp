@@ -2,7 +2,7 @@
 
 namespace ChimeApp.Domain
 {
-    internal interface IDynamoDBRepository
+    public interface IDynamoDBRepository
     {
         Task<string> GetMeetingInfo(string externalMeetingId);
         Task<string> GetAttendeeInfo(string attendeeId);

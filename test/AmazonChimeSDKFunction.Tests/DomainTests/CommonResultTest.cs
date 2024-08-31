@@ -1,7 +1,7 @@
 using Xunit;
 using ChimeApp.Domain;
 
-namespace AmazonChimeSDKFunction.Tests;
+namespace ChimeSDKServerApp.Tests.DomainTests;
 
 public class CommonResultTest
 {

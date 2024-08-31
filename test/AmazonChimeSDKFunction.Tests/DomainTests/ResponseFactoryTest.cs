@@ -4,7 +4,7 @@ using ChimeApp.Domain;
 using ChimeApp.Models;
 using Newtonsoft.Json;
 
-namespace AmazonChimeSDKFunction.Tests;
+namespace ChimeSDKServerApp.Tests.DomainTests;
 
 public class ResponseFactoryTest
 {

@@ -12,10 +12,12 @@ public class LeaveMeetingFunction
 {
     private readonly IMeetingRepository _meetingRepository;
     private readonly IDynamoDBRepository _dynamoDBRepository;
-    public LeaveMeetingFunction()
+    public LeaveMeetingFunction() : this(new MeetingOperation(), new DynamoDBOperation()) { }
+
+    public LeaveMeetingFunction(IMeetingRepository meeting, IDynamoDBRepository dynamo)
     {
-        _meetingRepository = new MeetingOperation();
-        _dynamoDBRepository = new DynamoDBOperation();
+        _meetingRepository = meeting;
+        _dynamoDBRepository = dynamo;
     }
 
     /// <summary>

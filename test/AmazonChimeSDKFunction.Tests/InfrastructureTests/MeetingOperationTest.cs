@@ -5,7 +5,7 @@ using Moq;
 using ChimeApp.Infrastructure;
 using ChimeSDKServerApp.Domain.DomainHelper;
 
-namespace AmazonChimeSDKFunction.Tests;
+namespace ChimeSDKServerApp.Tests.InfrastructureTests;
 
 public class MeetingOperationTest
 {
@@ -35,7 +35,8 @@ public class MeetingOperationTest
         _mockDomainHelper.Setup(x => x.GetUUId()).Returns("uuid");
         _mockDomainHelper.Setup(x => x.GetRegion()).Returns("region");
         _mock.Setup(x => x.CreateMeetingAsync(It.IsAny<CreateMeetingRequest>(), default))
-            .Callback<CreateMeetingRequest, CancellationToken>((request, token) => {
+            .Callback<CreateMeetingRequest, CancellationToken>((request, token) =>
+            {
                 request.ClientRequestToken.Is("uuid");
                 request.ExternalMeetingId.Is("externalMeetingId");
                 request.MediaRegion.Is("region");
@@ -56,7 +57,8 @@ public class MeetingOperationTest
     public async Task ミーティング終了()
     {
         _mock.Setup(x => x.DeleteMeetingAsync(It.IsAny<DeleteMeetingRequest>(), default))
-            .Callback<DeleteMeetingRequest, CancellationToken>((request, token) => { 
+            .Callback<DeleteMeetingRequest, CancellationToken>((request, token) =>
+            {
                 request.MeetingId.Is("meetingId");
             });
 
