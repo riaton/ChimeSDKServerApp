@@ -48,6 +48,8 @@ public class JoinMeetingFunction
             JoinMeetingResponse response = new();
             response.AttendeeInfo = JsonSerializer.Serialize(joinInfo);
 
+            context.Logger.LogLine("attendee: " + joinInfo.ToString());
+
             //クライアントに返却
             return ResponseFactory.CreateResponse(CommonResult.OK, response);
         }

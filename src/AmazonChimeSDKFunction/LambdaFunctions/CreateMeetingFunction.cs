@@ -53,7 +53,8 @@ public class CreateMeetingFunction
             response.MeetingInfo = JsonSerializer.Serialize(meetingInfo);
             response.AttendeeInfo = JsonSerializer.Serialize(joinInfo);
 
-            Console.WriteLine("meeting: " + meetingInfo.ToString());
+            context.Logger.LogLine("meeting: " + meetingInfo.ToString());
+            context.Logger.LogLine("attendee: " + joinInfo.ToString());
             //クライアントに返却
             return ResponseFactory.CreateResponse(CommonResult.OK, response);
         }
