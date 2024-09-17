@@ -1,167 +1,81 @@
 ﻿using ChimeApp.Domain;
 using ChimeApp.Models;
+using ChimeAppTest;
 using Xunit;
+using Xunit.Abstractions;
 
 
 namespace ChimeSDKServerApp.Tests.DomainTests
 {
     public class BasicValidatorTest
     {
-        private TestMessage1 _testMessage;
-        public BasicValidatorTest()
+        private static TestMessage _test1 = new()
         {
-            var subMessage1 = new SubMessage()
+            Str1 = null,
+            Str2 = "bbb",
+            Str3 = "cccccccccc",
+            Str4 = "1234",
+        };
+
+        private static TestMessage _test2 = new()
+        {
+            Str1 = null,
+            Str2 = null,
+            Str3 = "cccccccccc",
+            Str4 = "1234",
+        };
+
+        private static TestMessage _test3 = new()
+        {
+            Str1 = null,
+            Str2 = "",
+            Str3 = "cccccccccc",
+            Str4 = "1234",
+        };
+
+        private static TestMessage _test4 = new()
+        {
+            Str1 = null,
+            Str2 = "bbb",
+            Str3 = "cccccccccca",
+            Str4 = "1234",
+        };
+
+        private static TestMessage _test5 = new()
+        {
+            Str1 = null,
+            Str2 = "bbb",
+            Str3 = "cccccccccc",
+            Str4 = "123a",
+        };
+
+        [Theory]
+        [MemberData(nameof(TestData))]
+        [Trait("Category", "Domain")]
+        public void 文字列のバリデーション(TestMessage message, int errorNum, string errorMessage)
+        {
+            var results = BasicValidator.Validate(message);
+
+            if(errorNum == 0)
             {
-                TestBool = true
-            };
+                Assert.Empty(results);
+            }
 
-            var subMessage2 = new SubMessage()
+            if(errorNum == 1)
             {
-                TestBool = false
-            };
-
-            _testMessage = new TestMessage1()
-            {
-                TestString = "1234567890",
-                TestInteger = 1,
-                TestSubMessage = subMessage1
-            };
-
-            _testMessage.TestStringList.Add("aaa");
-            _testMessage.TestStringList.Add("bbb");
-            _testMessage.TestSubMessageList.Add(subMessage1);
-            _testMessage.TestSubMessageList.Add(subMessage2);
+                Assert.Single(results);
+                results[0].Is(errorMessage);
+            }
         }
 
-        [Fact]
-        [Trait("Category", "Domain")]
-        public void 文字列のバリデーション()
+        public static IEnumerable<object[]> TestData =>
+            new List<object[]>
         {
-            var results = BasicValidator.Validate(_testMessage);
-            Assert.Empty(results);
-
-            _testMessage.TestString = string.Empty;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to Required Check. FieldName = TestString");
-
-            _testMessage.TestString = "12345678910";
-            results = BasicValidator.Validate(_testMessage);
-            Assert.Single(results);
-            results[0].Is("Failed to StrLen Check. FieldName = TestString");
-
-            _testMessage.TestString = "abcde";
-            results = BasicValidator.Validate(_testMessage);
-            Assert.Single(results);
-            results[0].Is("Failed to Regex Check. FieldName = TestString");
-        }
-
-        [Fact]
-        [Trait("Category", "Domain")]
-        public void 数値のバリデーション()
-        {
-            _testMessage.TestInteger = null;
-            var results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to Required Check. FieldName = TestInteger");
-
-            _testMessage.TestInteger = 0;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to MinVal Check. FieldName = TestInteger");
-
-            _testMessage.TestInteger = 10;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestInteger = 11;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to MaxVal Check. FieldName = TestInteger");
-        }
-
-        [Fact]
-        [Trait("Category", "Domain")]
-        public void サブメッセージのバリデーション()
-        {
-            _testMessage.TestSubMessage = null;
-            var results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to Required Check. FieldName = TestSubMessage");
-            _testMessage.TestSubMessage = new SubMessage();
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to Required Check. FieldName = TestBool");
-            _testMessage.TestSubMessage.TestBool = true;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestSubMessage.TestBool = false;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-        }
-
-        [Fact]
-        [Trait("Category", "Domain")]
-        public void 文字列リストのバリデーション()
-        {
-            _testMessage.TestStringList.Clear();
-            var results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestStringList.Add("aaa");
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestStringList.Add("bbb");
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-        }
-
-        [Fact]
-        [Trait("Category", "Domain")]
-        public void サブメッセージリストのバリデーション()
-        {
-            _testMessage.TestSubMessageList.Clear();
-            var results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestSubMessageList.Add(new SubMessage());
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to Required Check. FieldName = TestBool");
-            _testMessage.TestSubMessageList[0].TestBool = false;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestSubMessageList.Add(new SubMessage()
-            {
-                TestBool = true
-            });
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Empty(results);
-
-            _testMessage.TestSubMessageList[1].TestBool = null;
-            results = BasicValidator.Validate(_testMessage);
-
-            Assert.Single(results);
-            results[0].Is("Failed to Required Check. FieldName = TestBool");
-        }
+            new object[] { _test1, 0, string.Empty },
+            new object[] { _test2, 1, "Failed to Required Check. FieldName = Str2" },
+            new object[] { _test3, 1, "Failed to Required Check. FieldName = Str2" },
+            new object[] { _test4, 1, "Failed to StrLen Check. FieldName = Str3" },
+            new object[] { _test5, 1, "Failed to Regex Check. FieldName = Str4" },
+        };
     }
 }
